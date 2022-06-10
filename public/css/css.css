@@ -1,0 +1,188 @@
+*{padding: 0; margin: 0; outline: none; border: none; box-sizing: border-box;}
+ul,li{list-style-type: none;}
+a{text-decoration: none; color: #333}
+body{font-family: "microsoft yahei"; font-size: 14px;}
+
+.login{width: 100%; height: 100vh; overflow: hidden; display: flex;}
+.login .left{flex: 1; width: 100%; height: 100vh; background: #feffc2; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.login .left h2{font-size: 50px; letter-spacing: 10px; color: #ffcb1f; padding: 60px 0 120px;}
+.login .left p{font-size: 35px;}
+.login .right{flex: 1; height: 100vh; background: #ffff; display: flex; flex-direction: column; justify-content: center; text-align: center;}
+.login .right .input{margin-top: 60px;}
+.login .right .input input{width: 80%; height: 70px; line-height: 70px; background: #feffc2; font-size: 20px; text-indent: 20px;}
+.login .right .btn{width: 80%; display: flex; justify-content: space-between; margin: 70px auto 0;}
+.login .right .btn button{width: 215px; height: 75px; background: #ffcb1f; border-radius: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.2); font-size: 23px; color: #fff; cursor: pointer;}
+.login .right .btn a{width: 215px; height: 75px;  background: #ffcb1f; border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 10px rgba(0,0,0,0.2); font-size: 23px; color: #fff;}
+
+.body{width: 100%; min-height: 100vh; overflow: hidden;  display: flex;}
+.bodyleft{width: 160px; height: 100vh; overflow: hidden; background: #feffc2; display: flex; flex-direction: column; text-align: center; position: fixed; left: 0; z-index: 999;}
+.bodyleft .top{padding-top: 20px;}
+.bodyleft .top img{display: block; width: 60px; margin: 0 auto 10px; }
+.bodyleft .top h2{font-size: 20px; color: #ffcb1f;}
+.bodyleft .face img{display: block; width: 60px; padding: 30px 0; margin: 0 auto;}
+.bodyleft .nav ul{border-top: 1px dotted #ccc;}
+.bodyleft .nav ul li{width: 100%; padding:10px 0px; border-bottom: 1px dotted #ccc;}
+.bodyleft .nav ul li a{width: 120px; height: 40px; margin: 0 auto; border-radius: 10px; font-size: 18px; line-height: 40px; text-align: center; color: #333; display: block;}
+.bodyleft .nav ul li a:hover,.bodyleft .nav ul li.act a{background: #ffcb1f; color: #fff;}
+.bodyleft .mp{display: flex; padding: 20px 10px; justify-content: space-around; align-items: center;}
+.bodyleft .mp .a{width: 26px; height: 26px; background: #ffcb1f; border-radius: 100%; display: flex; align-items: center; justify-content: center; cursor: pointer;}
+.bodyleft .mp .a i{color: #fff;}
+.bodyleft .mp .cd{position: relative;}
+.bodyleft .mp .cd a{display: block; position: absolute; left: 50%; top: 50%; transform: translate(-48%,-60%); color: #f60;}
+.bodyleft .mp .cd a i{font-size: 20px;}
+.bodyleft .mp .cd img.rat{animation: goRat 2s infinite linear;}
+.bodyright{flex: 1; padding:40px 40px 90px 200px;}
+
+.discovery{width: 100%; height: auto; overflow: hidden;}
+.discovery .form{width: 100%; height: 60px; background: #ffcb1f; border-radius: 60px; overflow: hidden;}
+.discovery .form form{display: flex;}
+.discovery .form input{flex: 1; height: 60px; line-height: 60px; text-indent: 15px; background: none; font-size: 18px; color: #fff;}
+.discovery .form input::placeholder{color: #fff;}
+.discovery .form button{width: 60px; height: 60px; color: #fff; background: none; cursor: pointer;}
+.discovery .form button i{font-size: 30px;}
+.discovery .tip{width: 100%; height: auto; overflow: hidden; padding: 40px 0; position: relative;}
+.discovery .tip .pic{width: 100%; text-align: right;}
+.discovery .tip .pic img{max-width: 100%;}
+.discovery .tip .showtext{position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; justify-content: center; flex-direction: column;}
+.discovery .tip .showtext h2{font-size: 100px; color: #ffcb1f;}
+.discovery .tip .showtext p{font-size: 30px;}
+.discovery .result{width: 100%; height: auto; overflow: hidden; display: none;}
+.discovery .result ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.discovery .result ul li{text-align: center;}
+.discovery .result ul li img{display: block;}
+.discovery .result ul li h2{padding: 15px 0; font-size: 18px;}
+
+.schedule{width: 100%; height: 80vh; overflow: hidden; display: flex; flex-direction: column;}
+.schedule .h2{width: 100%; height: auto; padding:10px 20px; border-radius: 20px; overflow: hidden; display: flex; align-items: center; justify-content: space-between; background: #ffcb1f; font-size: 20px; color: #fff;}
+.schedule .h2 a{background:#fff; width: 30px; height: 30px; border-radius: 100%; line-height: 30px; display: block; text-align: center; transition: all 0.4s;}
+.schedule .h2 a:hover{transform: rotate(360deg);}
+.schedule .list{flex: 1; display: none;}
+.schedule .list .table{padding: 20px 0; }
+.schedule .list table{width: 100%; height: auto; overflow: hidden; border-collapse: collapse;}
+.schedule .list table tr td,.schedule .list table tr th{padding: 10px; border: 1px solid #ccc;}
+.schedule .list table tr td:last-child{text-align: center;}
+.schedule .list table tr td.time{text-align: center;}
+.schedule .list table tr td a{display: inline-block; padding: 5px 10px; color: #fff; background: #ffcb1f; margin: 0 5px; border-radius: 5px;}
+.schedule .msg{flex: 1; background: #eee; margin-top: 30px; display: none; align-items: center; justify-content: center; font-size: 30px; color: #ffcb1f;}
+
+.tasks{width: inherit; height: auto; overflow: hidden;}
+.tasks .nav{width: 100%; height: auto; overflow: hidden; background: #fff;}
+.tasks .nav ul li{width: 48%; float: left; height: 55px; line-height: 55px; background: #ffe79a; color: #fff; text-align: center; cursor: pointer; font-size: 20px; border-radius: 10px;}
+.tasks .nav ul li.act{background: #ffcb1f;}
+.tasks .nav ul li:last-child{float: right;}
+.tasks .list{width: 100%; height: auto; overflow: hidden;}
+.tasks .list .dl{width: 100%; height: auto; overflow: hidden; margin-top: 40px;}
+.tasks .list .dl.red h2{color: #ff0303;}
+.tasks .list .dl.red .desc{border: 1px solid #ffcbcb;}
+.tasks .list .dl.red .desc::before{background: #ff0303;}
+.tasks .list .dl h2{font-size: 18px; padding-bottom: 5px; color: #90d8f8;}
+.tasks .list .dl .desc{width: 100%; height: auto; overflow: hidden; line-height: 1.8; border: 1px solid #ddf3fc; padding: 10px 20px; border-radius: 20px; position: relative;}
+.tasks .list .dl .desc::before{content: ''; width: 8px; height: 100%; background: #58c5f5; position: absolute; left: 0; top: 0;}
+
+.remider{width: 100%; height: auto; overflow: hidden;}
+.remider .nav ul{display: flex; justify-content: space-between;}
+.remider .nav ul li{width: 48%; height: 55px; background: #ffe79a; line-height: 55px; text-align: center; cursor: pointer; color: #fff; font-size: 20px; border-radius: 10px;}
+.remider .nav ul li.act{background: #ffcb1f; color: #fff;}
+.remider .box .dl{display: none;}
+.remider .box .dl.act{display: block;}
+.remider .box .dl p{display: flex; align-items: center; justify-content: center;}
+.remider .box .dl p span{font-size: 20vw; font-weight: bold; color: #ffcb1f;}
+.remider .box .dl ul{display: flex; justify-content: center; padding-bottom: 10px;}
+.remider .box .dl ul li{width: 100px; height: 100px; line-height: 100px; box-shadow: 0 0 10px rgba(0,0,0,0.3); border-radius: 100%; text-align: center; background: #ffcb1f; margin: 0 40px; cursor: pointer;}
+.remider .box .dl ul li i{font-size: 40px; color: #fff;}
+
+.fnav{position: fixed; width: 100%; height: auto; overflow: hidden; left: 0; bottom: 0; background: #feffc2; padding: 20px 0; z-index: 9999;}
+.fnav ul{display: flex; justify-content: space-around;}
+.fnav ul li a{font-size: 16px;}
+
+.dataform{width: auto; height: auto; position: fixed; padding: 20px; left:50%; top: 50%; transform: translate(-50%,-50%); background: #ffcb1f; display: none;}
+.dataform .dl{width: 100%; height: auto; overflow: hidden; margin-bottom: 30px;}
+.dataform input{width: 300px; height: 40px; text-indent: 10px;}
+.dataform button#close{width: 30px; height: 30px; background: #fff; border-radius: 100%; font-size: 18px; position: absolute; top: -10px; right: -10px; cursor: pointer;}
+.dataform .send{width: 120px; height: 40px; background: #fff; color: #ffcb1f; font-size: 18px; cursor: pointer;}
+
+.showMsg{position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); display: none; padding: 30px; border-radius: 5px; background: rgba(0,0,0,0.5); font-size:20px; color: #fff; z-index: 999;}
+
+.showMen{width: 10px; height: 100vh; display: flex; align-items: center; position: fixed; left: 0; top: 0;}
+.showMen span{font-size: 16px; background: #ffcb1f; color: #fff; padding: 10px 0;}
+
+@keyframes goRat{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@media(max-width:1400px){
+	.login .left img{width: 200px;}
+	.login .left h2{padding: 30px 0 60px;}
+	.login .left p{font-size: 28px;}
+	.login .right .face img{width: 200px;}
+	
+	.discovery .tip .showtext{padding-left: 40px;}
+}
+
+@media(max-width:1300px){
+
+}
+
+@media(max-width:1200px){
+	.login .right .btn button,.login .right .btn a{width: 180px; height: 55px; font-size: 20px;}
+}
+
+@media(max-width:1100px){
+	.login{flex-direction: column; height: auto;}
+	.login .left h2{padding: 20px 0; font-size: 26px;}
+	.login .left p{font-size: 20px;}
+	.login .left{padding: 60px 0;}
+	.login .right{padding: 60px 0;}
+	
+	.discovery .result ul li{width: 48%; padding-bottom: 20px;}
+	.discovery .result ul li h2{padding: 10px 0;}
+	.discovery .result ul li img{width: 100%;}
+}
+
+@media(max-width:992px){
+	.bodyleft{ left: -160px;}
+	.bodyright{padding:30px 15px 90px;}
+	
+	.login .left img{width: 150px;}
+	.login .right .face img{width: 150px;}
+	.login .right .input{margin-top: 30px;}
+	.login .right .input input{width: 90%; height: 50px;}
+	.login .right .btn{width: 90%; margin-top: 30px;}
+	.login .right .btn button,.login .right .btn a{width: 130px; height: 55px; font-size: 16px;}
+	
+	.discovery .form{height: 50px;}
+	.discovery .form input{height: 50px; line-height: 50px;}
+	.discovery .form button{height: 50px; line-height: 50px;}
+	.discovery .tip .showtext h2{font-size: 40px;}
+	.discovery .tip .showtext p{font-size: 25px;}
+	.discovery .result ul li{width:100%;}
+	
+	.tasks .list .dl{margin-top: 20px;}
+}
+
+@media(max-width:768px){
+	.discovery .tip{padding: 20px 0;}
+	.discovery .tip .showtext h2{font-size: 18px;}
+	.discovery .tip .showtext p{font-size: 14px;}
+	.discovery .tip .showtext{padding-left: 20px;}
+	
+	.schedule .msg{font-size: 25px;}
+	.schedule .list table tr td,.schedule .list table tr th{padding: 2px; font-size: 12px;}
+	.schedule .list table tr td a{padding: 5px; margin: 5px 0;}
+	
+	.remider .box .dl p{padding: 40px 0;}
+	.remider .box .dl ul li{width: 70px; height: 70px; line-height: 70px;}
+	.remider .box .dl ul li i{font-size: 20px;}
+}
+
+@media(max-width:576px){
+
+}

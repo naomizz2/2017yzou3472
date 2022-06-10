@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sign in</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+	<div class="login">
+		<div class="left">
+			<img src="img/login_01.jpg" alt="">
+			<h2>StudyHelper</h2>
+			<p>Never miss your Assignment Agaiin</p>
+		</div>
+		<div class="right">
+			<div class="face"><img src="img/login_02.png"></div>
+			<form action=""method="post" name="login" onsubmit="return checklogin();">
+				<div class="input"><input type="email" name="email" placeholder="Email"></div>
+				<div class="input"><input type="password" name="password" placeholder="Password"></div>
+				<div class="btn">
+					<button type="submit">Sign In</button>
+					<a href="#">Sign Up</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="showMsg"></div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

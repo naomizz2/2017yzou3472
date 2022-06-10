@@ -1,0 +1,29 @@
+{
+  "name": "studbud",
+  "version": "1.0.0",
+  "description": "Assignment 3 repository",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "prestart": "parcel build ./public/index.html",
+    "dev": "parcel serve ./public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drew-usyd/studbud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drew-usyd/studbud/issues"
+  },
+  "homepage": "https://github.com/drew-usyd/studbud#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "sass": "^1.51.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1",
+    "parcel": "^2.4.1"
+  }
+}
