@@ -66,3 +66,9 @@
 ![preliminary musicplayer](iteration_picture/iteration4.png "mockup-first musicplayer")
 ![final musicplayer](readme_picture/musicplayer.png "mockup-final musicplayer")
 
+# References
+<p>Staff, O. T. (n.d.). Study Tips & Techniques [19 Submissions] | OutwitTrade. Retrieved from https://outwittrade.com/study-tips-techniques/</p>
+<p>Who’s killing physics? (2022, April 15). Retrieved June 10, 2022, from cosmosmagazine.com website: https://cosmosmagazine.com/science/physics/whos-killing-physics/</p>
+<p>National Mathematics Day 2021: Why do we celebrate it on Dec 22- the legacy of Srinivasa Ramanujan. (n.d.). Retrieved June 10, 2022, from www.timesnownews.com website: https://www.timesnownews.com/education/article/national-mathematics-day-2021-why-do-we-celebrate-it-on-dec-22-the-legacy-of-srinivasa-ramanujan/842558</p>
+<p>Open, book Free Icon. (n.d.). Retrieved from icon-icons.com website: https://icon-icons.com/icon/open-book/153185</p>
+<p>Person Icon In Line Style. Man Symbol Stock Vector - Illustration of partner, head: 156936114. (n.d.). Retrieved June 10, 2022, from www.dreamstime.com website: https://www.dreamstime.com/person-icon-line-style-man-symbol-flat-isolated-white-background-simple-avatar-abstract-black-user-sign-vector-illustration-image156936114</p>
